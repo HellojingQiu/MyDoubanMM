@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BCF803931A58E5A600527497 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF803921A58E5A600527497 /* Foundation.framework */; };
+		BCF803951A58E5A600527497 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF803941A58E5A600527497 /* CoreGraphics.framework */; };
+		BCF803971A58E5A600527497 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF803961A58E5A600527497 /* UIKit.framework */; };
+		BCF8039D1A58E5A600527497 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BCF8039B1A58E5A600527497 /* InfoPlist.strings */; };
+		BCF8039F1A58E5A600527497 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF8039E1A58E5A600527497 /* main.m */; };
+		BCF803A31A58E5A600527497 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF803A21A58E5A600527497 /* AppDelegate.m */; };
+		BCF803A61A58E5A600527497 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCF803A41A58E5A600527497 /* Main.storyboard */; };
+		BCF803A91A58E5A600527497 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF803A81A58E5A600527497 /* ViewController.m */; };
+		BCF803AB1A58E5A600527497 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCF803AA1A58E5A600527497 /* Images.xcassets */; };
+		BCF803B21A58E5A600527497 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF803B11A58E5A600527497 /* XCTest.framework */; };
+		BCF803B31A58E5A600527497 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF803921A58E5A600527497 /* Foundation.framework */; };
+		BCF803B41A58E5A600527497 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF803961A58E5A600527497 /* UIKit.framework */; };
+		BCF803BC1A58E5A600527497 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BCF803BA1A58E5A600527497 /* InfoPlist.strings */; };
+		BCF803BE1A58E5A600527497 /* MyDoubanMMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF803BD1A58E5A600527497 /* MyDoubanMMTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BCF803B51A58E5A600527497 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCF803871A58E5A600527497 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCF8038E1A58E5A600527497;
+			remoteInfo = MyDoubanMM;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BCF8038F1A58E5A600527497 /* MyDoubanMM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDoubanMM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCF803921A58E5A600527497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BCF803941A58E5A600527497 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BCF803961A58E5A600527497 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BCF8039A1A58E5A600527497 /* MyDoubanMM-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyDoubanMM-Info.plist"; sourceTree = "<group>"; };
+		BCF8039C1A58E5A600527497 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BCF8039E1A58E5A600527497 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BCF803A01A58E5A600527497 /* MyDoubanMM-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyDoubanMM-Prefix.pch"; sourceTree = "<group>"; };
+		BCF803A11A58E5A600527497 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BCF803A21A58E5A600527497 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BCF803A51A58E5A600527497 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BCF803A71A58E5A600527497 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BCF803A81A58E5A600527497 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BCF803AA1A58E5A600527497 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BCF803B01A58E5A600527497 /* MyDoubanMMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyDoubanMMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCF803B11A58E5A600527497 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		BCF803B91A58E5A600527497 /* MyDoubanMMTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyDoubanMMTests-Info.plist"; sourceTree = "<group>"; };
+		BCF803BB1A58E5A600527497 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BCF803BD1A58E5A600527497 /* MyDoubanMMTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyDoubanMMTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BCF8038C1A58E5A600527497 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCF803951A58E5A600527497 /* CoreGraphics.framework in Frameworks */,
+				BCF803971A58E5A600527497 /* UIKit.framework in Frameworks */,
+				BCF803931A58E5A600527497 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCF803AD1A58E5A600527497 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCF803B21A58E5A600527497 /* XCTest.framework in Frameworks */,
+				BCF803B41A58E5A600527497 /* UIKit.framework in Frameworks */,
+				BCF803B31A58E5A600527497 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BCF803861A58E5A600527497 = {
+			isa = PBXGroup;
+			children = (
+				BCF803981A58E5A600527497 /* MyDoubanMM */,
+				BCF803B71A58E5A600527497 /* MyDoubanMMTests */,
+				BCF803911A58E5A600527497 /* Frameworks */,
+				BCF803901A58E5A600527497 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BCF803901A58E5A600527497 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BCF8038F1A58E5A600527497 /* MyDoubanMM.app */,
+				BCF803B01A58E5A600527497 /* MyDoubanMMTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BCF803911A58E5A600527497 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BCF803921A58E5A600527497 /* Foundation.framework */,
+				BCF803941A58E5A600527497 /* CoreGraphics.framework */,
+				BCF803961A58E5A600527497 /* UIKit.framework */,
+				BCF803B11A58E5A600527497 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BCF803981A58E5A600527497 /* MyDoubanMM */ = {
+			isa = PBXGroup;
+			children = (
+				BCF803A11A58E5A600527497 /* AppDelegate.h */,
+				BCF803A21A58E5A600527497 /* AppDelegate.m */,
+				BCF803A41A58E5A600527497 /* Main.storyboard */,
+				BCF803A71A58E5A600527497 /* ViewController.h */,
+				BCF803A81A58E5A600527497 /* ViewController.m */,
+				BCF803AA1A58E5A600527497 /* Images.xcassets */,
+				BCF803991A58E5A600527497 /* Supporting Files */,
+			);
+			path = MyDoubanMM;
+			sourceTree = "<group>";
+		};
+		BCF803991A58E5A600527497 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BCF8039A1A58E5A600527497 /* MyDoubanMM-Info.plist */,
+				BCF8039B1A58E5A600527497 /* InfoPlist.strings */,
+				BCF8039E1A58E5A600527497 /* main.m */,
+				BCF803A01A58E5A600527497 /* MyDoubanMM-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BCF803B71A58E5A600527497 /* MyDoubanMMTests */ = {
+			isa = PBXGroup;
+			children = (
+				BCF803BD1A58E5A600527497 /* MyDoubanMMTests.m */,
+				BCF803B81A58E5A600527497 /* Supporting Files */,
+			);
+			path = MyDoubanMMTests;
+			sourceTree = "<group>";
+		};
+		BCF803B81A58E5A600527497 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BCF803B91A58E5A600527497 /* MyDoubanMMTests-Info.plist */,
+				BCF803BA1A58E5A600527497 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BCF8038E1A58E5A600527497 /* MyDoubanMM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCF803C11A58E5A600527497 /* Build configuration list for PBXNativeTarget "MyDoubanMM" */;
+			buildPhases = (
+				BCF8038B1A58E5A600527497 /* Sources */,
+				BCF8038C1A58E5A600527497 /* Frameworks */,
+				BCF8038D1A58E5A600527497 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyDoubanMM;
+			productName = MyDoubanMM;
+			productReference = BCF8038F1A58E5A600527497 /* MyDoubanMM.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BCF803AF1A58E5A600527497 /* MyDoubanMMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCF803C41A58E5A600527497 /* Build configuration list for PBXNativeTarget "MyDoubanMMTests" */;
+			buildPhases = (
+				BCF803AC1A58E5A600527497 /* Sources */,
+				BCF803AD1A58E5A600527497 /* Frameworks */,
+				BCF803AE1A58E5A600527497 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCF803B61A58E5A600527497 /* PBXTargetDependency */,
+			);
+			name = MyDoubanMMTests;
+			productName = MyDoubanMMTests;
+			productReference = BCF803B01A58E5A600527497 /* MyDoubanMMTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BCF803871A58E5A600527497 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = qianfeng;
+				TargetAttributes = {
+					BCF803AF1A58E5A600527497 = {
+						TestTargetID = BCF8038E1A58E5A600527497;
+					};
+				};
+			};
+			buildConfigurationList = BCF8038A1A58E5A600527497 /* Build configuration list for PBXProject "MyDoubanMM" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BCF803861A58E5A600527497;
+			productRefGroup = BCF803901A58E5A600527497 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BCF8038E1A58E5A600527497 /* MyDoubanMM */,
+				BCF803AF1A58E5A600527497 /* MyDoubanMMTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BCF8038D1A58E5A600527497 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCF803AB1A58E5A600527497 /* Images.xcassets in Resources */,
+				BCF8039D1A58E5A600527497 /* InfoPlist.strings in Resources */,
+				BCF803A61A58E5A600527497 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCF803AE1A58E5A600527497 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCF803BC1A58E5A600527497 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BCF8038B1A58E5A600527497 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCF803A91A58E5A600527497 /* ViewController.m in Sources */,
+				BCF803A31A58E5A600527497 /* AppDelegate.m in Sources */,
+				BCF8039F1A58E5A600527497 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCF803AC1A58E5A600527497 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCF803BE1A58E5A600527497 /* MyDoubanMMTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BCF803B61A58E5A600527497 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCF8038E1A58E5A600527497 /* MyDoubanMM */;
+			targetProxy = BCF803B51A58E5A600527497 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BCF8039B1A58E5A600527497 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCF8039C1A58E5A600527497 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BCF803A41A58E5A600527497 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCF803A51A58E5A600527497 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BCF803BA1A58E5A600527497 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCF803BB1A58E5A600527497 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BCF803BF1A58E5A600527497 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BCF803C01A58E5A600527497 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BCF803C21A58E5A600527497 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyDoubanMM/MyDoubanMM-Prefix.pch";
+				INFOPLIST_FILE = "MyDoubanMM/MyDoubanMM-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BCF803C31A58E5A600527497 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyDoubanMM/MyDoubanMM-Prefix.pch";
+				INFOPLIST_FILE = "MyDoubanMM/MyDoubanMM-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		BCF803C51A58E5A600527497 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MyDoubanMM.app/MyDoubanMM";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyDoubanMM/MyDoubanMM-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MyDoubanMMTests/MyDoubanMMTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		BCF803C61A58E5A600527497 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MyDoubanMM.app/MyDoubanMM";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyDoubanMM/MyDoubanMM-Prefix.pch";
+				INFOPLIST_FILE = "MyDoubanMMTests/MyDoubanMMTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BCF8038A1A58E5A600527497 /* Build configuration list for PBXProject "MyDoubanMM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCF803BF1A58E5A600527497 /* Debug */,
+				BCF803C01A58E5A600527497 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCF803C11A58E5A600527497 /* Build configuration list for PBXNativeTarget "MyDoubanMM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCF803C21A58E5A600527497 /* Debug */,
+				BCF803C31A58E5A600527497 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BCF803C41A58E5A600527497 /* Build configuration list for PBXNativeTarget "MyDoubanMMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCF803C51A58E5A600527497 /* Debug */,
+				BCF803C61A58E5A600527497 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BCF803871A58E5A600527497 /* Project object */;
+}
