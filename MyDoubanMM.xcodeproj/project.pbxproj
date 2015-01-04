@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC6E3EEF1A58EA13007778D7 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BC6E3EED1A58EA13007778D7 /* Model.xcdatamodeld */; };
+		BC6E3EF21A58EA58007778D7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC6E3EF11A58EA58007778D7 /* CoreData.framework */; };
+		BCB5CB8B1A58EFE800A7D740 /* Config.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB5CB8A1A58EFE800A7D740 /* Config.m */; };
+		BCB5CB901A58FCAF00A7D740 /* WWSideslipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB5CB8F1A58FCAF00A7D740 /* WWSideslipViewController.m */; };
+		BCB5CB931A58FD2F00A7D740 /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB5CB921A58FD2F00A7D740 /* LeftViewController.m */; };
+		BCB5CB961A591A7100A7D740 /* MyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB5CB951A591A7100A7D740 /* MyTableViewController.m */; };
+		BCB5CB9E1A591D3700A7D740 /* playerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB5CB9D1A591D3700A7D740 /* playerModel.m */; };
+		BCB5CBA11A5934CC00A7D740 /* MyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB5CBA01A5934CC00A7D740 /* MyTableViewCell.m */; };
 		BCF803931A58E5A600527497 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF803921A58E5A600527497 /* Foundation.framework */; };
 		BCF803951A58E5A600527497 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF803941A58E5A600527497 /* CoreGraphics.framework */; };
 		BCF803971A58E5A600527497 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF803961A58E5A600527497 /* UIKit.framework */; };
@@ -34,6 +42,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BC6E3EEE1A58EA13007778D7 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		BC6E3EF11A58EA58007778D7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		BC6E3EF51A58ED86007778D7 /* Const.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Const.h; sourceTree = "<group>"; };
+		BCB5CB891A58EFE800A7D740 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		BCB5CB8A1A58EFE800A7D740 /* Config.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Config.m; sourceTree = "<group>"; };
+		BCB5CB8E1A58FCAF00A7D740 /* WWSideslipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWSideslipViewController.h; sourceTree = "<group>"; };
+		BCB5CB8F1A58FCAF00A7D740 /* WWSideslipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWSideslipViewController.m; sourceTree = "<group>"; };
+		BCB5CB911A58FD2F00A7D740 /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
+		BCB5CB921A58FD2F00A7D740 /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
+		BCB5CB941A591A7100A7D740 /* MyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableViewController.h; sourceTree = "<group>"; };
+		BCB5CB951A591A7100A7D740 /* MyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableViewController.m; sourceTree = "<group>"; };
+		BCB5CB9C1A591D3700A7D740 /* playerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = playerModel.h; sourceTree = "<group>"; };
+		BCB5CB9D1A591D3700A7D740 /* playerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = playerModel.m; sourceTree = "<group>"; };
+		BCB5CB9F1A5934CC00A7D740 /* MyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableViewCell.h; sourceTree = SOURCE_ROOT; };
+		BCB5CBA01A5934CC00A7D740 /* MyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableViewCell.m; sourceTree = SOURCE_ROOT; };
 		BCF8038F1A58E5A600527497 /* MyDoubanMM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDoubanMM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCF803921A58E5A600527497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BCF803941A58E5A600527497 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -60,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC6E3EF21A58EA58007778D7 /* CoreData.framework in Frameworks */,
 				BCF803951A58E5A600527497 /* CoreGraphics.framework in Frameworks */,
 				BCF803971A58E5A600527497 /* UIKit.framework in Frameworks */,
 				BCF803931A58E5A600527497 /* Foundation.framework in Frameworks */,
@@ -79,9 +103,62 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC6E3EF01A58EA1A007778D7 /* 数据库 */ = {
+			isa = PBXGroup;
+			children = (
+				BC6E3EED1A58EA13007778D7 /* Model.xcdatamodeld */,
+			);
+			name = "数据库";
+			sourceTree = "<group>";
+		};
+		BC6E3EF31A58EBD8007778D7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BCB5CB941A591A7100A7D740 /* MyTableViewController.h */,
+				BCB5CB951A591A7100A7D740 /* MyTableViewController.m */,
+				BCB5CB9C1A591D3700A7D740 /* playerModel.h */,
+				BCB5CB9D1A591D3700A7D740 /* playerModel.m */,
+				BCB5CB9F1A5934CC00A7D740 /* MyTableViewCell.h */,
+				BCB5CBA01A5934CC00A7D740 /* MyTableViewCell.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		BC6E3EF41A58ED61007778D7 /* 配置 */ = {
+			isa = PBXGroup;
+			children = (
+				BC6E3EF51A58ED86007778D7 /* Const.h */,
+				BCB5CB891A58EFE800A7D740 /* Config.h */,
+				BCB5CB8A1A58EFE800A7D740 /* Config.m */,
+			);
+			name = "配置";
+			sourceTree = "<group>";
+		};
+		BCB5CB8C1A58FC9A00A7D740 /* Thirdlibrary */ = {
+			isa = PBXGroup;
+			children = (
+				BCB5CB8D1A58FCAF00A7D740 /* SlipViewController */,
+			);
+			name = Thirdlibrary;
+			sourceTree = "<group>";
+		};
+		BCB5CB8D1A58FCAF00A7D740 /* SlipViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BCB5CB8E1A58FCAF00A7D740 /* WWSideslipViewController.h */,
+				BCB5CB8F1A58FCAF00A7D740 /* WWSideslipViewController.m */,
+				BCB5CB911A58FD2F00A7D740 /* LeftViewController.h */,
+				BCB5CB921A58FD2F00A7D740 /* LeftViewController.m */,
+			);
+			name = SlipViewController;
+			path = MyDoubanMM/SlipViewController;
+			sourceTree = "<group>";
+		};
 		BCF803861A58E5A600527497 = {
 			isa = PBXGroup;
 			children = (
+				BCB5CB8C1A58FC9A00A7D740 /* Thirdlibrary */,
+				BC6E3EF01A58EA1A007778D7 /* 数据库 */,
 				BCF803981A58E5A600527497 /* MyDoubanMM */,
 				BCF803B71A58E5A600527497 /* MyDoubanMMTests */,
 				BCF803911A58E5A600527497 /* Frameworks */,
@@ -101,6 +178,7 @@
 		BCF803911A58E5A600527497 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BC6E3EF11A58EA58007778D7 /* CoreData.framework */,
 				BCF803921A58E5A600527497 /* Foundation.framework */,
 				BCF803941A58E5A600527497 /* CoreGraphics.framework */,
 				BCF803961A58E5A600527497 /* UIKit.framework */,
@@ -112,6 +190,8 @@
 		BCF803981A58E5A600527497 /* MyDoubanMM */ = {
 			isa = PBXGroup;
 			children = (
+				BC6E3EF41A58ED61007778D7 /* 配置 */,
+				BC6E3EF31A58EBD8007778D7 /* Controllers */,
 				BCF803A11A58E5A600527497 /* AppDelegate.h */,
 				BCF803A21A58E5A600527497 /* AppDelegate.m */,
 				BCF803A41A58E5A600527497 /* Main.storyboard */,
@@ -249,9 +329,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCB5CB8B1A58EFE800A7D740 /* Config.m in Sources */,
 				BCF803A91A58E5A600527497 /* ViewController.m in Sources */,
 				BCF803A31A58E5A600527497 /* AppDelegate.m in Sources */,
+				BCB5CB9E1A591D3700A7D740 /* playerModel.m in Sources */,
+				BCB5CB901A58FCAF00A7D740 /* WWSideslipViewController.m in Sources */,
+				BCB5CB931A58FD2F00A7D740 /* LeftViewController.m in Sources */,
 				BCF8039F1A58E5A600527497 /* main.m in Sources */,
+				BC6E3EEF1A58EA13007778D7 /* Model.xcdatamodeld in Sources */,
+				BCB5CB961A591A7100A7D740 /* MyTableViewController.m in Sources */,
+				BCB5CBA11A5934CC00A7D740 /* MyTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +543,7 @@
 				BCF803C31A58E5A600527497 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BCF803C41A58E5A600527497 /* Build configuration list for PBXNativeTarget "MyDoubanMMTests" */ = {
 			isa = XCConfigurationList;
@@ -464,8 +552,22 @@
 				BCF803C61A58E5A600527497 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BC6E3EED1A58EA13007778D7 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BC6E3EEE1A58EA13007778D7 /* Model.xcdatamodel */,
+			);
+			currentVersion = BC6E3EEE1A58EA13007778D7 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BCF803871A58E5A600527497 /* Project object */;
 }

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A10177DD-83B6-4D2C-B0D4-A1C2B39B4246</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MyDoubanMM</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>6C7B0EB7-CA36-4CF1-BD6C-86EA4999804B</key>
+		<string>https://github.com/HellowjingQiu/MyDoubanMM.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MyDoubanMM.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>6C7B0EB7-CA36-4CF1-BD6C-86EA4999804B</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/HellowjingQiu/MyDoubanMM.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>6C7B0EB7-CA36-4CF1-BD6C-86EA4999804B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6C7B0EB7-CA36-4CF1-BD6C-86EA4999804B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MyDoubanMM</string>
+		</dict>
+	</array>
+</dict>
+</plist>

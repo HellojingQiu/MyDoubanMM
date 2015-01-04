@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
-
+#import "WWSideslipViewController.h"
+#import "SlipViewController/LeftViewController.h"
 @interface ViewController ()
 
 @end
@@ -17,6 +18,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    NSLog(@"sd");
+    LeftViewController *VCLeft=[[LeftViewController alloc]init];
+    WWSideslipViewController *slide=[[WWSideslipViewController alloc]initWithLeftView:VCLeft andMainView:self andRightView:VCLeft andBackgroundImage:nil];
+    
+    slide.sideslipTapGes.enabled=YES;
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
