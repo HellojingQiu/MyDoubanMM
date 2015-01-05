@@ -1,0 +1,1 @@
+PODS_MYDOUBANMM_KVNPROGRESS_OTHER_LDFLAGS = -framework "GLKit" -framework "QuartzCore"
