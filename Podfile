@@ -1,7 +1,17 @@
-platform :<#ios#>, "<#6.0#>"
+platform :ios, "7.0"
 
-pod "<#PodName#>"
+target :'MyDoubanMM' do
 
-target :<#TargetName#>Tests, :exclusive => true do
-  # pod 'Kiwi'
+pod 'hpple'
+pod 'SDWebImage'
+pod 'KVNProgress'
+pod 'AFNetworking'
+pod 'iOS-Slide-Menu'
+pod 'JTSImageViewController'
+pod 'CHTCollectionViewWaterfallLayout'
+
+end
+
+target :'MyDoubanMMTests' do
+
 end

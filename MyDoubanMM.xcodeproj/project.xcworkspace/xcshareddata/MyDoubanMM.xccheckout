@@ -10,29 +10,29 @@
 	<string>MyDoubanMM</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>6C7B0EB7-CA36-4CF1-BD6C-86EA4999804B</key>
+		<key>0F13240E11C8EBAD9FCC09E5A5B70F1F63690A56</key>
 		<string>https://github.com/HellowjingQiu/MyDoubanMM.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>MyDoubanMM.xcodeproj/project.xcworkspace</string>
+	<string>MyDoubanMM.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>6C7B0EB7-CA36-4CF1-BD6C-86EA4999804B</key>
+		<key>0F13240E11C8EBAD9FCC09E5A5B70F1F63690A56</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/HellowjingQiu/MyDoubanMM.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>6C7B0EB7-CA36-4CF1-BD6C-86EA4999804B</string>
+	<string>0F13240E11C8EBAD9FCC09E5A5B70F1F63690A56</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>6C7B0EB7-CA36-4CF1-BD6C-86EA4999804B</string>
+			<string>0F13240E11C8EBAD9FCC09E5A5B70F1F63690A56</string>
 			<key>IDESourceControlWCCName</key>
 			<string>MyDoubanMM</string>
 		</dict>
