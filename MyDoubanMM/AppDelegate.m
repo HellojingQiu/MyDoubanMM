@@ -7,8 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "MyTableViewController.h"
-#import "playerModel.h"
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions

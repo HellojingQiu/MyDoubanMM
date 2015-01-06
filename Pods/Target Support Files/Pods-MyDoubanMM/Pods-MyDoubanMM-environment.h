@@ -48,6 +48,12 @@
 #define COCOAPODS_VERSION_MINOR_AFNetworking_UIKit 5
 #define COCOAPODS_VERSION_PATCH_AFNetworking_UIKit 0
 
+// BOZPongRefreshControl
+#define COCOAPODS_POD_AVAILABLE_BOZPongRefreshControl
+#define COCOAPODS_VERSION_MAJOR_BOZPongRefreshControl 1
+#define COCOAPODS_VERSION_MINOR_BOZPongRefreshControl 0
+#define COCOAPODS_VERSION_PATCH_BOZPongRefreshControl 1
+
 // CHTCollectionViewWaterfallLayout
 #define COCOAPODS_POD_AVAILABLE_CHTCollectionViewWaterfallLayout
 #define COCOAPODS_VERSION_MAJOR_CHTCollectionViewWaterfallLayout 0
@@ -65,6 +71,12 @@
 #define COCOAPODS_VERSION_MAJOR_KVNProgress 2
 #define COCOAPODS_VERSION_MINOR_KVNProgress 1
 #define COCOAPODS_VERSION_PATCH_KVNProgress 5
+
+// MJRefresh
+#define COCOAPODS_POD_AVAILABLE_MJRefresh
+#define COCOAPODS_VERSION_MAJOR_MJRefresh 1
+#define COCOAPODS_VERSION_MINOR_MJRefresh 0
+#define COCOAPODS_VERSION_PATCH_MJRefresh 0
 
 // SDWebImage
 #define COCOAPODS_POD_AVAILABLE_SDWebImage

@@ -48,6 +48,7 @@ install_resource()
   esac
 }
           install_resource "KVNProgress/KVNProgress/Resources/KVNProgressView.xib"
+                    install_resource "MJRefresh/MJRefreshExample/MJRefreshExample/MJRefresh/MJRefresh.bundle"
                     install_resource "iOS-Slide-Menu/SlideMenu/Source/Assets/menu-button.png"
                     install_resource "iOS-Slide-Menu/SlideMenu/Source/Assets/menu-button@2x.png"
           

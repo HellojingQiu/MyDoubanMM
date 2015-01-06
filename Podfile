@@ -9,6 +9,9 @@ pod 'AFNetworking'
 pod 'iOS-Slide-Menu'
 pod 'JTSImageViewController'
 pod 'CHTCollectionViewWaterfallLayout'
+pod 'BOZPongRefreshControl'
+
+pod 'MJRefresh' ,:git=>'https://github.com/CoderMJLee/MJRefresh.git'
 
 end
 
