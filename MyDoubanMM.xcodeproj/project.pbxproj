@@ -16,6 +16,8 @@
 		BC6E3EEF1A58EA13007778D7 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BC6E3EED1A58EA13007778D7 /* Model.xcdatamodeld */; };
 		BC6E3EF21A58EA58007778D7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC6E3EF11A58EA58007778D7 /* CoreData.framework */; };
 		BC9055EC1A5A68BB0044E99D /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = BC9055EB1A5A68BB0044E99D /* Podfile */; };
+		BC9674341A5D106300066946 /* SideBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9674331A5D106300066946 /* SideBarViewController.m */; };
+		BC9674371A5D15FA00066946 /* SettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9674361A5D15FA00066946 /* SettingTableViewController.m */; };
 		BCB5CB8B1A58EFE800A7D740 /* Config.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB5CB8A1A58EFE800A7D740 /* Config.m */; };
 		BCB5CB901A58FCAF00A7D740 /* WWSideslipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB5CB8F1A58FCAF00A7D740 /* WWSideslipViewController.m */; };
 		BCB5CB931A58FD2F00A7D740 /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB5CB921A58FD2F00A7D740 /* LeftViewController.m */; };
@@ -62,6 +64,10 @@
 		BC6E3EF11A58EA58007778D7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		BC6E3EF51A58ED86007778D7 /* Const.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Const.h; sourceTree = "<group>"; };
 		BC9055EB1A5A68BB0044E99D /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BC9674321A5D106300066946 /* SideBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideBarViewController.h; sourceTree = "<group>"; };
+		BC9674331A5D106300066946 /* SideBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideBarViewController.m; sourceTree = "<group>"; };
+		BC9674351A5D15FA00066946 /* SettingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingTableViewController.h; sourceTree = "<group>"; };
+		BC9674361A5D15FA00066946 /* SettingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingTableViewController.m; sourceTree = "<group>"; };
 		BCB5CB891A58EFE800A7D740 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
 		BCB5CB8A1A58EFE800A7D740 /* Config.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Config.m; sourceTree = "<group>"; };
 		BCB5CB8E1A58FCAF00A7D740 /* WWSideslipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWSideslipViewController.h; sourceTree = "<group>"; };
@@ -147,6 +153,10 @@
 				BC03CE861A5AA7190059878F /* RootViewController.m */,
 				BC03CE881A5AAAD20059878F /* MainCollectionViewController.h */,
 				BC03CE891A5AAAD20059878F /* MainCollectionViewController.m */,
+				BC9674321A5D106300066946 /* SideBarViewController.h */,
+				BC9674331A5D106300066946 /* SideBarViewController.m */,
+				BC9674351A5D15FA00066946 /* SettingTableViewController.h */,
+				BC9674361A5D15FA00066946 /* SettingTableViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -402,7 +412,9 @@
 			files = (
 				BCB5CB8B1A58EFE800A7D740 /* Config.m in Sources */,
 				BC1FE0561A5BE50D003D9926 /* ImageCell.m in Sources */,
+				BC9674341A5D106300066946 /* SideBarViewController.m in Sources */,
 				BC03CE8A1A5AAAD20059878F /* MainCollectionViewController.m in Sources */,
+				BC9674371A5D15FA00066946 /* SettingTableViewController.m in Sources */,
 				BC03CE871A5AA7190059878F /* RootViewController.m in Sources */,
 				BCF803A31A58E5A600527497 /* AppDelegate.m in Sources */,
 				BCB5CB901A58FCAF00A7D740 /* WWSideslipViewController.m in Sources */,
