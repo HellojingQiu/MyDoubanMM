@@ -34,4 +34,16 @@ static Config *_config;
 -(LayoutType)getLayoutType{
     return [[NSUserDefaults standardUserDefaults]integerForKey:@"LayoutType"];
 }
+
+-(NSString *)getLayoutTypeName{
+    int layoutType= [[NSUserDefaults standardUserDefaults]integerForKey:@"LayoutType"];
+    switch (layoutType) {
+        case 1:
+            return @"Instagram";break;
+        case 2:
+            return @"Classic";break;
+        case 4:
+            return @"WaterFall";break;
+    }return @"类型错误";
+}
 @end

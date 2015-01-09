@@ -14,20 +14,10 @@ typedef NS_ENUM(NSInteger, LayoutType) {
     LayoutTypeWaterFall = 1<<2,
 };
 
-NSString *df_map(LayoutType type){
-    switch (type) {
-        case 1:
-            return @"LayoutTypeInstagram"; break;
-        case 2:
-            return @"LayoutTypeClassic"; break;
-        case 4:
-            return @"LayoutTypeWaterFall"; break;
-    }
-}
-
 @interface Config : NSObject
 
 +(instancetype)sharedConfig;
 -(void)setLayoutType:(LayoutType)type;
 -(LayoutType)getLayoutType;
+-(NSString *)getLayoutTypeName;
 @end

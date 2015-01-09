@@ -15,6 +15,7 @@
 		BC1FE05C1A5C13CF003D9926 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = BC1FE05B1A5C13CF003D9926 /* Default.png */; };
 		BC6E3EEF1A58EA13007778D7 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BC6E3EED1A58EA13007778D7 /* Model.xcdatamodeld */; };
 		BC6E3EF21A58EA58007778D7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC6E3EF11A58EA58007778D7 /* CoreData.framework */; };
+		BC8441681A5E1C3000C839FA /* LayoutTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8441671A5E1C3000C839FA /* LayoutTableViewController.m */; };
 		BC9055EC1A5A68BB0044E99D /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = BC9055EB1A5A68BB0044E99D /* Podfile */; };
 		BC9674341A5D106300066946 /* SideBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9674331A5D106300066946 /* SideBarViewController.m */; };
 		BC9674371A5D15FA00066946 /* SettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9674361A5D15FA00066946 /* SettingTableViewController.m */; };
@@ -63,6 +64,8 @@
 		BC6E3EEE1A58EA13007778D7 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		BC6E3EF11A58EA58007778D7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		BC6E3EF51A58ED86007778D7 /* Const.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Const.h; sourceTree = "<group>"; };
+		BC8441661A5E1C3000C839FA /* LayoutTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayoutTableViewController.h; sourceTree = "<group>"; };
+		BC8441671A5E1C3000C839FA /* LayoutTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayoutTableViewController.m; sourceTree = "<group>"; };
 		BC9055EB1A5A68BB0044E99D /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BC9674321A5D106300066946 /* SideBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideBarViewController.h; sourceTree = "<group>"; };
 		BC9674331A5D106300066946 /* SideBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideBarViewController.m; sourceTree = "<group>"; };
@@ -157,6 +160,8 @@
 				BC9674331A5D106300066946 /* SideBarViewController.m */,
 				BC9674351A5D15FA00066946 /* SettingTableViewController.h */,
 				BC9674361A5D15FA00066946 /* SettingTableViewController.m */,
+				BC8441661A5E1C3000C839FA /* LayoutTableViewController.h */,
+				BC8441671A5E1C3000C839FA /* LayoutTableViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -415,6 +420,7 @@
 				BC9674341A5D106300066946 /* SideBarViewController.m in Sources */,
 				BC03CE8A1A5AAAD20059878F /* MainCollectionViewController.m in Sources */,
 				BC9674371A5D15FA00066946 /* SettingTableViewController.m in Sources */,
+				BC8441681A5E1C3000C839FA /* LayoutTableViewController.m in Sources */,
 				BC03CE871A5AA7190059878F /* RootViewController.m in Sources */,
 				BCF803A31A58E5A600527497 /* AppDelegate.m in Sources */,
 				BCB5CB901A58FCAF00A7D740 /* WWSideslipViewController.m in Sources */,
