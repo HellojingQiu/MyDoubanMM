@@ -27,13 +27,13 @@
 
 @implementation MainCollectionViewController
 
-static NSString * const reuseIdentifier = @"Cell";
+static NSString * const reuseIdentifier = @"ImageCell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     _page=1;
     _layoutType=[[Config sharedConfig]getLayoutType];
-    self.dataUrl=self.dataUrl?MM_ALL:self.dataUrl;
+    self.dataUrl=self.dataUrl?self.dataUrl:MM_ALL;
     self.arrayImg=[NSMutableArray array];
     self.arrayImgSize=[NSMutableArray array];
     
@@ -67,6 +67,10 @@ static NSString * const reuseIdentifier = @"Cell";
     // Do any additional setup after loading the view.
 }
 
+//-(void)viewWillAppear:(BOOL)animated{
+//    [self setLayoutType:[[Config sharedConfig]getLayoutType]];
+//    [self.collectionView reloadData];
+//}
 /**
  *  根据图片数量,添加随机大小的图片边框
  *
@@ -118,6 +122,20 @@ static NSString * const reuseIdentifier = @"Cell";
 
 -(BOOL)slideNavigationControllerShouldDisplayLeftMenu{
     return YES;
+}
+
+-(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
+    switch (self.layoutType) {
+        case 0:
+            return CGSizeMake(CGRectGetWidth(self.view.bounds)/3-1, CGRectGetWidth(self.view.bounds)/3-1);
+            break;
+        case 1:
+            return CGSizeMake(CGRectGetWidth(self.view.bounds), CGRectGetWidth(self.view.bounds));
+            break;
+        case 2:
+            return [self.arrayImgSize[indexPath.item]CGSizeValue];
+            break;
+    }
 }
 
 

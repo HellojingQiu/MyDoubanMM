@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6724" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6724" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Nbg-j7-xHx">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
@@ -284,8 +284,8 @@
                         </connections>
                     </tableView>
                     <connections>
-                        <outlet property="cacheSize" destination="ppN-EQ-Sub" id="zJV-Gf-lHx"/>
-                        <outlet property="imageStyle" destination="j5i-LX-oOb" id="P55-Pq-n8w"/>
+                        <outlet property="lblCacheSize" destination="ppN-EQ-Sub" id="dE6-no-DGT"/>
+                        <outlet property="lblImgStyle" destination="j5i-LX-oOb" id="b49-UD-svG"/>
                         <segue destination="TFU-Qk-p2g" kind="push" identifier="toLayoutTypeView" id="HsI-JL-zlN"/>
                     </connections>
                 </tableViewController>
@@ -297,14 +297,14 @@
         <scene sceneID="GJe-wS-Xb0">
             <objects>
                 <tableViewController storyboardIdentifier="LayoutTableView" id="TFU-Qk-p2g" customClass="LayoutTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="7L2-sq-HWT">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="7L2-sq-HWT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
                             <tableViewSection id="5tX-kY-hwK">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="hzl-G0-3T5" style="IBUITableViewCellStyleDefault" id="EYT-Ri-Onz">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Cell" textLabel="hzl-G0-3T5" style="IBUITableViewCellStyleDefault" id="EYT-Ri-Onz">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EYT-Ri-Onz" id="kyH-X9-LG3">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -318,7 +318,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="BKL-Ry-66Z" style="IBUITableViewCellStyleDefault" id="JkY-SC-jJy">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Cell" textLabel="BKL-Ry-66Z" style="IBUITableViewCellStyleDefault" id="JkY-SC-jJy">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JkY-SC-jJy" id="8A4-7J-9qf">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -332,7 +332,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="suU-KM-pnU" style="IBUITableViewCellStyleDefault" id="wy5-g3-LSC">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Cell" textLabel="suU-KM-pnU" style="IBUITableViewCellStyleDefault" id="wy5-g3-LSC">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wy5-g3-LSC" id="DSg-E6-g6Y">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -375,7 +375,7 @@
                             <inset key="sectionInset" minX="0.0" minY="1" maxX="0.0" maxY="1"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="y43-4Q-x7j" customClass="ImageCell">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ImageCell" id="y43-4Q-x7j" customClass="ImageCell">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">

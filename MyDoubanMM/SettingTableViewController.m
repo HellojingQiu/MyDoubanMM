@@ -32,6 +32,10 @@
     }
 }
 
+-(void)refreshCacheSize{
+    [self refreshCacheSize:self.lblCacheSize];
+}
+
 -(void)refreshImageStyle:(UILabel *)lblImgStyle{
     lblImgStyle.text=_config.getLayoutTypeName;
 }
@@ -49,7 +53,7 @@
                 fileSize+=[self fileSizeAtPath:fileNameAbs];
             }
             dispatch_async(dispatch_get_main_queue(), ^{
-                lblCacheSize.text=[NSString stringWithFormat:@"%.2f",fileSize/1024.0/1024.0];
+                lblCacheSize.text=[NSString stringWithFormat:@"%.2fM",fileSize/1024.0/1024.0];
             });
         });
     }else lblCacheSize.text=@"0.0M";

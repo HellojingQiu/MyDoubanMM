@@ -7,9 +7,11 @@
 //
 
 #import "LayoutTableViewController.h"
-
+#import "SettingTableViewController.h"
+#import <iOS-Slide-Menu/SlideNavigationController.h>
+#import "Config.h"
 @interface LayoutTableViewController ()
-
+@property (copy,nonatomic) NSIndexPath *selectedIndex;
 @end
 
 @implementation LayoutTableViewController
@@ -29,20 +31,31 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:YES];
+    self.selectedIndex=[NSIndexPath indexPathForRow:[[Config sharedConfig] getLayoutType] inSection:0];
+    [self.tableView cellForRowAtIndexPath:_selectedIndex].accessoryType=UITableViewCellAccessoryCheckmark;
+    [self.tableView reloadData];
+    [self.tableView selectRowAtIndexPath:_selectedIndex animated:NO scrollPosition:UITableViewScrollPositionNone];
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    SettingTableViewController *settings=[segue sourceViewController];
 }
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView cellForRowAtIndexPath:indexPath].accessoryType=UITableViewCellAccessoryCheckmark;
+    [[Config sharedConfig]setLayoutType:indexPath.row];
+    
+//    UIStoryboard *storyboard=[UIStoryboard storyboardWithName:@"Main" bundle:nil];
+//    
+//    UICollectionViewController *slideNavgation=[storyboard instantiateViewControllerWithIdentifier:@"MainCollectionView"];
+//    [[SlideNavigationController sharedInstance]popToRootViewControllerAnimated:YES];
+}
+
+-(void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView cellForRowAtIndexPath:indexPath].accessoryType=UITableViewCellAccessoryNone;
+}
 /*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];

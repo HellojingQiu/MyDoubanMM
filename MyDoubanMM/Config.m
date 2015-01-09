@@ -38,11 +38,11 @@ static Config *_config;
 -(NSString *)getLayoutTypeName{
     int layoutType= [[NSUserDefaults standardUserDefaults]integerForKey:@"LayoutType"];
     switch (layoutType) {
-        case 1:
+        case 0:
             return @"Instagram";break;
-        case 2:
+        case 1:
             return @"Classic";break;
-        case 4:
+        case 2:
             return @"WaterFall";break;
     }return @"类型错误";
 }

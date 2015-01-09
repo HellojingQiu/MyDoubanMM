@@ -7,6 +7,7 @@
 //
 
 #import "SideBarViewController.h"
+#import "MainCollectionViewController.h"
 #import "Const.h"
 
 @interface SideBarViewController ()
@@ -40,37 +41,35 @@
             switch (indexPath.row) {
                 case 0:
                     [collectionView setTitle:@"所有妹子"];
-                    [collectionView setValue:MM_ALL forKey:@"datasource"];
+                    [collectionView setValue:MM_ALL forKey:@"dataUrl"];
                     break;
                 case 1:
                     [collectionView setTitle:@"性感"];
-                    [collectionView setValue:MM_SEX forKey:@"datasource"];
+                    [collectionView setValue:MM_SEX forKey:@"dataUrl"];
                     break;
                 case 2:
                     [collectionView setTitle:@"有沟"];
-                    [collectionView setValue:MM_CLEAVAGE forKey:@"datasource"];
+                    [collectionView setValue:MM_CLEAVAGE forKey:@"dataUrl"];
                     break;
                 case 3:
                     [collectionView setTitle:@"美腿"];
-                    [collectionView setValue:MM_LEGS forKey:@"datasource"];
+                    [collectionView setValue:MM_LEGS forKey:@"dataUrl"];
                     break;
                 case 4:
                     [collectionView setTitle:@"小清新"];
-                    [collectionView setValue:MM_FRESH forKey:@"datasource"];
+                    [collectionView setValue:MM_FRESH forKey:@"dataUrl"];
                     break;
                 case 5:
                     [collectionView setTitle:@"文艺"];
-                    [collectionView setValue:MM_LITERATURE forKey:@"datasource"];
+                    [collectionView setValue:MM_LITERATURE forKey:@"dataUrl"];
                     break;
                 case 6:
                     [collectionView setTitle:@"美臀"];
-                    [collectionView setValue:MM_CALLIPYGE forKey:@"datasource"];
+                    [collectionView setValue:MM_CALLIPYGE forKey:@"dataUrl"];
                     break;
-                //跳转
-                [[SlideNavigationController sharedInstance] popToRootAndSwitchToViewController:collectionView withSlideOutAnimation:NO andCompletion:nil];
-                    
-                break;
             }
+            //跳转
+            [[SlideNavigationController sharedInstance] popToRootAndSwitchToViewController:collectionView withSlideOutAnimation:NO andCompletion:nil];
         }
         case 1:{
             UITableViewController *settingTableView=[storyboard instantiateViewControllerWithIdentifier:@"SettingTableView"];

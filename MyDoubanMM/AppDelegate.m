@@ -7,14 +7,34 @@
 //
 
 #import "AppDelegate.h"
+#import <iOS-Slide-Menu/SlideNavigationController.h>
+#import "SideBarViewController.h"
+#import <AFNetworking/AFNetworkActivityIndicatorManager.h>
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    //开启状态栏的网络状态
+    [AFNetworkActivityIndicatorManager sharedManager].enabled=YES;
     
+    UIStoryboard *storyboard=[UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    SideBarViewController *sideBarView=[storyboard instantiateViewControllerWithIdentifier:@"SideBarView"];
+    [self setupSideBarLeft:sideBarView andRight:nil];
     return YES;
 }
-							
+
+-(void)setupSideBarLeft:(id)left andRight:(id)right{
+    SlideNavigationController *slideNavigation=[SlideNavigationController sharedInstance];
+    [slideNavigation setLeftMenu:left];
+    [slideNavigation setRightMenu:right];
+    
+    [slideNavigation setEnableShadow:YES];
+    [slideNavigation setEnableSwipeGesture:YES];
+    [slideNavigation setAvoidSwitchingToSameClassViewController:NO];
+    [slideNavigation setPortraitSlideOffset:CGRectGetWidth(self.window.bounds)-100];
+    [slideNavigation setLandscapeSlideOffset:CGRectGetHeight(self.window.bounds)-100];
+}
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

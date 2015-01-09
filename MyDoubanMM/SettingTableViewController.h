@@ -15,4 +15,5 @@
 @property (weak, nonatomic) IBOutlet UILabel *lblImgStyle;
 @property (weak, nonatomic) IBOutlet UILabel *lblCacheSize;
 
+-(void)refreshCacheSize;
 @end

@@ -9,9 +9,12 @@
 #import <Foundation/Foundation.h>
 
 typedef NS_ENUM(NSInteger, LayoutType) {
-    LayoutTypeInstagram = 1,
-    LayoutTypeClassic   = 1<<1,
-    LayoutTypeWaterFall = 1<<2,
+//    LayoutTypeInstagram = 1,
+//    LayoutTypeClassic   = 1<<1,
+//    LayoutTypeWaterFall = 1<<2,
+    LayoutTypeInstagram,
+    LayoutTypeClassic,
+    LayoutTypeWaterFall,
 };
 
 @interface Config : NSObject
