@@ -33,18 +33,14 @@
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:YES];
-    self.selectedIndex=[NSIndexPath indexPathForRow:[[Config sharedConfig] getLayoutType] inSection:0];
-    [self.tableView cellForRowAtIndexPath:_selectedIndex].accessoryType=UITableViewCellAccessoryCheckmark;
+    self.selectedIndex = [NSIndexPath indexPathForRow:[[Config sharedConfig]getLayoutType] inSection:0];
+    [self.tableView cellForRowAtIndexPath:self.selectedIndex].accessoryType = UITableViewCellAccessoryCheckmark;
     [self.tableView reloadData];
-    [self.tableView selectRowAtIndexPath:_selectedIndex animated:NO scrollPosition:UITableViewScrollPositionNone];
-}
-
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    SettingTableViewController *settings=[segue sourceViewController];
+    [self.tableView selectRowAtIndexPath:self.selectedIndex animated:NO scrollPosition:UITableViewScrollPositionNone];
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    [tableView cellForRowAtIndexPath:indexPath].accessoryType=UITableViewCellAccessoryCheckmark;
+    [tableView cellForRowAtIndexPath:indexPath].accessoryType = UITableViewCellAccessoryCheckmark;
     [[Config sharedConfig]setLayoutType:indexPath.row];
     
 //    UIStoryboard *storyboard=[UIStoryboard storyboardWithName:@"Main" bundle:nil];
@@ -54,7 +50,9 @@
 }
 
 -(void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath{
-    [tableView cellForRowAtIndexPath:indexPath].accessoryType=UITableViewCellAccessoryNone;
+    if (self.selectedIndex != indexPath) {
+    [tableView cellForRowAtIndexPath:indexPath].accessoryType = UITableViewCellAccessoryNone;
+}
 }
 /*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

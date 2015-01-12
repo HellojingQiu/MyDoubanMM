@@ -20,8 +20,6 @@
 		BC9674341A5D106300066946 /* SideBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9674331A5D106300066946 /* SideBarViewController.m */; };
 		BC9674371A5D15FA00066946 /* SettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9674361A5D15FA00066946 /* SettingTableViewController.m */; };
 		BCB5CB8B1A58EFE800A7D740 /* Config.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB5CB8A1A58EFE800A7D740 /* Config.m */; };
-		BCB5CB901A58FCAF00A7D740 /* WWSideslipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB5CB8F1A58FCAF00A7D740 /* WWSideslipViewController.m */; };
-		BCB5CB931A58FD2F00A7D740 /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB5CB921A58FD2F00A7D740 /* LeftViewController.m */; };
 		BCF803931A58E5A600527497 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF803921A58E5A600527497 /* Foundation.framework */; };
 		BCF803951A58E5A600527497 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF803941A58E5A600527497 /* CoreGraphics.framework */; };
 		BCF803971A58E5A600527497 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF803961A58E5A600527497 /* UIKit.framework */; };
@@ -73,10 +71,6 @@
 		BC9674361A5D15FA00066946 /* SettingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingTableViewController.m; sourceTree = "<group>"; };
 		BCB5CB891A58EFE800A7D740 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
 		BCB5CB8A1A58EFE800A7D740 /* Config.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Config.m; sourceTree = "<group>"; };
-		BCB5CB8E1A58FCAF00A7D740 /* WWSideslipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWSideslipViewController.h; sourceTree = "<group>"; };
-		BCB5CB8F1A58FCAF00A7D740 /* WWSideslipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWSideslipViewController.m; sourceTree = "<group>"; };
-		BCB5CB911A58FD2F00A7D740 /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
-		BCB5CB921A58FD2F00A7D740 /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
 		BCF8038F1A58E5A600527497 /* MyDoubanMM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDoubanMM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCF803921A58E5A600527497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BCF803941A58E5A600527497 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -178,32 +172,11 @@
 			name = "配置";
 			sourceTree = "<group>";
 		};
-		BCB5CB8C1A58FC9A00A7D740 /* Thirdlibrary */ = {
-			isa = PBXGroup;
-			children = (
-				BCB5CB8D1A58FCAF00A7D740 /* SlipViewController */,
-			);
-			name = Thirdlibrary;
-			sourceTree = "<group>";
-		};
-		BCB5CB8D1A58FCAF00A7D740 /* SlipViewController */ = {
-			isa = PBXGroup;
-			children = (
-				BCB5CB8E1A58FCAF00A7D740 /* WWSideslipViewController.h */,
-				BCB5CB8F1A58FCAF00A7D740 /* WWSideslipViewController.m */,
-				BCB5CB911A58FD2F00A7D740 /* LeftViewController.h */,
-				BCB5CB921A58FD2F00A7D740 /* LeftViewController.m */,
-			);
-			name = SlipViewController;
-			path = MyDoubanMM/SlipViewController;
-			sourceTree = "<group>";
-		};
 		BCF803861A58E5A600527497 = {
 			isa = PBXGroup;
 			children = (
 				BC1FE05B1A5C13CF003D9926 /* Default.png */,
 				BC1FE0571A5BFB4F003D9926 /* chongwu15.jpg */,
-				BCB5CB8C1A58FC9A00A7D740 /* Thirdlibrary */,
 				BC6E3EF01A58EA1A007778D7 /* 数据库 */,
 				BCF803981A58E5A600527497 /* MyDoubanMM */,
 				BCF803B71A58E5A600527497 /* MyDoubanMMTests */,
@@ -423,8 +396,6 @@
 				BC8441681A5E1C3000C839FA /* LayoutTableViewController.m in Sources */,
 				BC03CE871A5AA7190059878F /* RootViewController.m in Sources */,
 				BCF803A31A58E5A600527497 /* AppDelegate.m in Sources */,
-				BCB5CB901A58FCAF00A7D740 /* WWSideslipViewController.m in Sources */,
-				BCB5CB931A58FD2F00A7D740 /* LeftViewController.m in Sources */,
 				BCF8039F1A58E5A600527497 /* main.m in Sources */,
 				BC6E3EEF1A58EA13007778D7 /* Model.xcdatamodeld in Sources */,
 				BC1FE0521A5BA4E1003D9926 /* NetworkUtil.m in Sources */,

@@ -73,14 +73,17 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     switch (indexPath.section) {
-        case 0:
-            //执行segue切换视图,使用custom方式的segue需要实source和destination间的动画效果
+        case 0: {
             [self performSegueWithIdentifier:@"toLayoutTypeView" sender:self];
             break;
-        case 1:{
-            if (indexPath.row) {
-                UIActionSheet *actionSheet=[[UIActionSheet alloc]initWithTitle:@"确认清除图片缓存?" delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:@"确认" otherButtonTitles:nil, nil];
-                [actionSheet showInView:tableView];
+        }
+        case 1: {
+            if (indexPath.row == 1) {
+                [[[UIActionSheet alloc]initWithTitle:@"确认清除缓存图片?"
+                                            delegate:self
+                                   cancelButtonTitle:@"取消"
+                              destructiveButtonTitle:@"确认清除"
+                                   otherButtonTitles:nil, nil] showInView:tableView];
             }
             break;
         }

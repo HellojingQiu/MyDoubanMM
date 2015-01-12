@@ -19,12 +19,12 @@
 #define DOWNLOAD_SUCCESS @"下载成功"
 #define DOWNLOAD_ERROR @"下载失败"
 
-#define MM_ALL           @"http://www.dbmeizi.com/category/10"
+#define MM_ALL           @"http://www.dbmeizi.com/category/11"
 #define MM_SEX           @"http://www.dbmeizi.com/category/1"
-#define MM_CLEAVAGE      @"http://www.dbmeizi.com/category/2"
-#define MM_LEGS          @"http://www.dbmeizi.com/category/3"
+//#define MM_CLEAVAGE      @"http://www.dbmeizi.com/category/2"
+//#define MM_LEGS          @"http://www.dbmeizi.com/category/3"
 #define MM_FRESH         @"http://www.dbmeizi.com/category/11"
 #define MM_LITERATURE    @"http://www.dbmeizi.com/category/12"
-#define MM_CALLIPYGE     @"http://www.dbmeizi.com/category/14"
+//#define MM_CALLIPYGE     @"http://www.dbmeizi.com/category/14"
 #define MM_RANK          @"http://www.dbmeizi.com/img/rank"
 #endif

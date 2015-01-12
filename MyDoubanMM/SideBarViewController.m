@@ -33,11 +33,12 @@
     [self.tableView selectRowAtIndexPath:selectedPath animated:NO scrollPosition:UITableViewScrollPositionNone];
 }
 
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    UIStoryboard *storyboard=[UIStoryboard storyboardWithName:@"Main" bundle:nil];
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
     switch (indexPath.section) {
-        case 0:{
-            UICollectionViewController *collectionView=[storyboard instantiateViewControllerWithIdentifier:@"MainCollectionView"];
+        case 0: {
+            //取MainCollectionView
+            UICollectionViewController *collectionView = [storyboard instantiateViewControllerWithIdentifier:@"MainCollectionView"];
             switch (indexPath.row) {
                 case 0:
                     [collectionView setTitle:@"所有妹子"];
@@ -47,39 +48,45 @@
                     [collectionView setTitle:@"性感"];
                     [collectionView setValue:MM_SEX forKey:@"dataUrl"];
                     break;
+                    //                case 2:
+                    //                    [collectionView setTitle:@"有沟"];
+                    //                    [collectionView setValue:MEIZI_CLEAVAGE forKey:@"datasource"];
+                    //                    break;
+                    //                case 3:
+                    //                    [collectionView setTitle:@"美腿"];
+                    //                    [collectionView setValue:MEIZI_LEGS forKey:@"datasource"];
+                    //                    break;
                 case 2:
-                    [collectionView setTitle:@"有沟"];
-                    [collectionView setValue:MM_CLEAVAGE forKey:@"dataUrl"];
-                    break;
-                case 3:
-                    [collectionView setTitle:@"美腿"];
-                    [collectionView setValue:MM_LEGS forKey:@"dataUrl"];
-                    break;
-                case 4:
                     [collectionView setTitle:@"小清新"];
                     [collectionView setValue:MM_FRESH forKey:@"dataUrl"];
                     break;
-                case 5:
+                case 3:
                     [collectionView setTitle:@"文艺"];
                     [collectionView setValue:MM_LITERATURE forKey:@"dataUrl"];
                     break;
-                case 6:
-                    [collectionView setTitle:@"美臀"];
-                    [collectionView setValue:MM_CALLIPYGE forKey:@"dataUrl"];
+                case 4:
+                    [collectionView setTitle:@"其他"];
+                    [collectionView setValue:MM_ALL forKey:@"dataUrl"];
                     break;
             }
-            //跳转
-            [[SlideNavigationController sharedInstance] popToRootAndSwitchToViewController:collectionView withSlideOutAnimation:NO andCompletion:nil];
+            //跳转MainCollectionView
+            [[SlideNavigationController sharedInstance] popToRootAndSwitchToViewController:collectionView
+                                                                     withSlideOutAnimation:NO
+                                                                             andCompletion:nil];
+            break;
         }
-        case 1:{
-            UITableViewController *settingTableView=[storyboard instantiateViewControllerWithIdentifier:@"SettingTableView"];
-            [settingTableView setTitle:@"配置"];
-            [[SlideNavigationController sharedInstance]popToRootAndSwitchToViewController:settingTableView withSlideOutAnimation:NO andCompletion:nil];
+        case 1: {
+            //取SettingTableView
+            UITableViewController *settingTableView = [storyboard instantiateViewControllerWithIdentifier:@"SettingTableView"];
+            //跳转SettingTableView
+            [settingTableView setTitle:@"设置"];
+            [[SlideNavigationController sharedInstance] popToRootAndSwitchToViewController:settingTableView
+                                                                     withSlideOutAnimation:NO
+                                                                             andCompletion:nil];
             break;
         }
     }
 }
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

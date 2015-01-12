@@ -9,12 +9,9 @@
 #import "MainCollectionViewController.h"
 #import "Config.h"
 #import "Const.h"
-#import <BOZPongRefreshControl.h>
 #import "NetworkUtil.h"
 #import "ImageCell.h"
-@interface MainCollectionViewController (){
-    BOZPongRefreshControl *_refreshControl;
-}
+@interface MainCollectionViewController ()
 
 @property (assign,nonatomic) int page;
 @property (assign,nonatomic) LayoutType layoutType;
@@ -145,6 +142,66 @@ static NSString * const reuseIdentifier = @"ImageCell";
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     return _arrayImg.count;
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    //获取选中的Cell
+    ImageCell *cell = (ImageCell*)[collectionView cellForItemAtIndexPath:indexPath];
+    //创建图片信息
+    JTSImageInfo *imageInfo = [[JTSImageInfo alloc]init];
+    imageInfo.imageURL = [NSURL URLWithString:cell.bigUrl];
+    imageInfo.altText = cell.content;
+    imageInfo.referenceRect = cell.frame;
+    imageInfo.referenceView = cell.superview;
+    //图片浏览Viewer
+    JTSImageViewController *imageViewer = [[JTSImageViewController alloc]initWithImageInfo:imageInfo mode:JTSImageViewControllerMode_Image backgroundStyle:JTSImageViewControllerBackgroundOption_Blurred];
+    imageViewer.interactionsDelegate = self;
+    [imageViewer showFromViewController:self transition:JTSImageViewControllerTransition_FromOriginalPosition];
+}
+
+- (BOOL)imageViewerAllowCopyToPasteboard:(JTSImageViewController *)imageViewer {
+    return YES;
+}
+
+- (BOOL)imageViewerShouldTemporarilyIgnoreTouches:(JTSImageViewController *)imageViewer {
+    return NO;
+}
+
+- (void)imageViewerDidLongPress:(JTSImageViewController *)imageViewer atRect:(CGRect)rect {
+    self.selectedImage = imageViewer.image;
+    [[[UIActionSheet alloc]initWithTitle:nil
+                                delegate:self
+                       cancelButtonTitle:@"取消"
+                  destructiveButtonTitle:@"保存到手机"
+                       otherButtonTitles:nil, nil]showInView:self.view];
+}
+
+#pragma mark <UIActionSheetDelegate>
+
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
+    switch (buttonIndex) {
+        case 0: {
+            [KVNProgress showWithStatus:@"正在保存..."];
+            UIImageWriteToSavedPhotosAlbum(self.selectedImage, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
+            break;
+        }
+        case 1: {
+            [actionSheet dismissWithClickedButtonIndex:buttonIndex animated:YES];
+            break;
+        }
+        default:
+            break;
+    }
+}
+
+#pragma mark SavePhotoToPhone
+- (void)image: (UIImage *) image didFinishSavingWithError: (NSError *) error contextInfo: (void *) contextInfo
+{
+    if(error) {
+        [KVNProgress showErrorWithStatus:@"保存图片失败"];
+    }else{
+        [KVNProgress showSuccessWithStatus:@"保存图片成功"];
+    }
 }
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
